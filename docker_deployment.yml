@@ -1,0 +1,9 @@
+development:
+  services:
+    web:
+      image: tedgoddard/gogit
+      command: ./startup
+      log_folder: /myapp/log
+      local_ports:
+        - 3000
+      ports: ["3000:80"]
